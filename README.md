@@ -1,1 +1,1 @@
-https://github.com/lisssq/mesto-ad
+Опубликованный проект: https://lisssq.github.io/mesto-production/
