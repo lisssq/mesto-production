@@ -7,7 +7,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Mesto</title>
-  <script type="module" crossorigin src="./assets/index-d8vHcnMg.js"></script>
+  <script type="module" crossorigin src="./assets/index-DGZZ23MO.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
 </head>
 
@@ -108,12 +108,13 @@
       <div class="popup__content">
         <button type="button" class="popup__close"></button>
         <h3 class="popup__title">Обновить аватар</h3>
-        <form class="popup__form" name="edit-avatar">
+        <form class="popup__form" name="edit-avatar" novalidate>
           <label class="popup__label">
             <input type="url" name="user-avatar" id="user-avatar" class="popup__input popup__input_type_avatar"
-              placeholder="Ссылка на изображение" />
+              placeholder="Ссылка на изображение" required />
+            <span class="popup__error" id="user-avatar-error"></span>
           </label>
-          <button type="submit" class="button popup__button">
+          <button type="submit" class="button popup__button popup__button_disabled" disabled>
             Сохранить
           </button>
         </form>
@@ -184,9 +185,9 @@
   <!--      </div>-->
   <!--    </template>-->
 
-  <!--    <template id="popup-info-user-preview-template">-->
-  <!--      <li class="popup__list-item popup__list-item_type_badge"></li>-->
-  <!--    </template>-->
+  <template id="popup-info-user-preview-template">
+    <li class="popup__list-item popup__list-item_type_badge"></li>
+  </template>
 </body>
 
 </html>
